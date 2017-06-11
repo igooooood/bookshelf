@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"/>
+	<title>Bookshelf</title>
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main class="main">
+		<div class="container">
+			<h1 class="main__title">Книжная полка</h1>
+			<button id='btn-add' class="main__btn btn" type="button" onclick="handleOpenPopup()">Добавить книгу</button>
+			<div class="main__content">
+				<section id='bookshelf' class="main__bookshelf bookshelf"></section>
+				<form id="popup" class="main__popup popup">
+					<h2 class="popup__title">Заполните поля</h2>
+					<div class="popup__item">
+						<label class="popup__label" for="nameBook">Наименование</label>
+						<input class="popup__input" id="nameBook" type="text" required>
+					</div>
+					<div class="popup__item">
+						<label class="popup__label" for="authorBook">Автор</label>
+						<input class="popup__input" id="authorBook" type="text">
+					</div>
+					<div class="popup__item">
+						<label class="popup__label" for="pathImg">Изображение</label>
+						<input class="popup__input" id="pathImg" type="url">
+					</div>
+					<div class="popup__item">
+						<label class="popup__label" for="yearStartBook">Год выпуска</label>
+						<input class="popup__input" id="yearStartBook" type="number" max="2017">
+					</div>
+					<div class="popup__btn-group">
+						<button class="btn popup__btn" type="submit">Сохранить</button>
+						<button class="btn popup__btn" type="button" onclick="handleClosePopup()">Отменить</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</main>
+	<script src="js/main.js"></script>
+</body>
+</html>

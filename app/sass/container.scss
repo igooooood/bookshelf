@@ -1,0 +1,16 @@
+@import "app/sass/veriables.scss";
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  @media ($tablet-width) {
+    width: 768px;
+  }
+  @media ($mobile-width) {
+    width: auto;
+    padding: 0 40px;
+  }
+  @media ($mobile-width) {
+    padding: 0 20px;
+  }
+}

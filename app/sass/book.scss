@@ -1,0 +1,65 @@
+@import "app/sass/veriables.scss";
+
+.book {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 16px;
+  transition: box-shadow .4s ease-out;
+  border: 2px solid $main-color-light;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+
+  align-items: center;
+  &:hover {
+    box-shadow: $box-shadow--hover;
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__img {
+    width: 150px;
+    height: 200px;
+    @media ($mobile-min-width) {
+      width: 100%;
+      height: 250px;
+      margin-top: 5px;
+    }
+  }
+  &__btn-group {
+    width: 100%;
+  }
+  &__btn {
+    width: 100%;
+    margin-top: 10px;
+    color: $text-color-dark;
+  }
+  &__information-box {
+    display: flex;
+    width: 100%;
+
+    justify-content: space-between;
+    @media ($mobile-min-width) {
+      flex-direction: column;
+    }
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    padding-right: 10px;
+    @media ($mobile-min-width) {
+      max-width: none;
+      height: auto;
+    }
+  }
+  &__year {
+    margin-top: auto;
+    @media ($mobile-min-width) {
+      margin-left: auto;
+    }
+  }
+}

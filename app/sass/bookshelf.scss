@@ -1,0 +1,47 @@
+@import "app/sass/veriables.scss";
+
+.bookshelf {
+  display: flex;
+  transition: transform .5s ease-out;
+  transform: translateX(0);
+
+  justify-content: flex-start;
+  will-change: transform;
+  flex-wrap: wrap;
+  &__book-wrapper {
+    width: 386px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    @media ($tablet-width) {
+      width: 364px;
+    }
+    @media ($mobile-width) {
+      width: 100%;
+      margin-right: 0;
+    }
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  &--invisible {
+    transform: translateX(2000px);
+  }
+}
+
+@media ($tablet-width) {
+  .bookshelf__book-wrapper:nth-child(2n) {
+    margin-right: 0;
+  }
+  .bookshelf__book-wrapper:nth-child(3n) {
+    margin-right: 20px;
+  }
+}
+
+@media ($mobile-width) {
+  .bookshelf__book-wrapper:nth-child(2n) {
+    margin-right: 0;
+  }
+  .bookshelf__book-wrapper:nth-child(3n) {
+    margin-right: 0;
+  }
+}

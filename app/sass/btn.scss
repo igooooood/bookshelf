@@ -1,0 +1,16 @@
+@import "app/sass/veriables.scss";
+
+.btn {
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all .3s ease-out;
+  font-weight: 700;
+  color: $text-color;
+  border: 2px solid $main-color-light;
+  outline: none;
+  background: none;
+  &:hover {
+    color: $text-color;
+    background-color: $main-color-light;
+  }
+}

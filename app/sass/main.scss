@@ -1,0 +1,37 @@
+@import "app/sass/veriables.scss";
+
+body {
+  background-color: #888;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media ($tablet-width) {
+    background-image: none;
+  }
+}
+
+.main {
+  overflow: hidden;
+  font-family: $main-font;
+
+  &__content {
+    padding: 40px 0;
+    color: $text-color-dark;
+  }
+  &__title {
+    font-family: $font-title;
+    color: $text-color;
+    @media ($mobile-min-width) {
+      text-align: center;
+    }
+  }
+  &__btn {
+    padding: 12px 40px;
+    border: none;
+    background-color: $main-color-light;
+    @media ($mobile-min-width) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
