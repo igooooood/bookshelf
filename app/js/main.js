@@ -28,7 +28,7 @@ function generateHtml(obj) {
                     '<div class="book__information">' +
                       '<div class="book__name">' + obj.name + '</div>' +
                       '<div class="book__author">'+ obj.author + '</div>' +
-                      '<div class="book__year">' + obj.year +' год</div>' +
+                      '<div class="book__year">' + obj.year +'</div>' +
                     '</div>' +
                     '<div class="book__img-wrapper">' +
                       '<img class="book__img" src="' + obj.img + '"  alt="изображение книги">' +
